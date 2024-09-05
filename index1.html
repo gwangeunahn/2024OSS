@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        .hide{
+            display : none;
+        }
+        .visibility_hidden{
+            visibility: hidden;
+        }
+
+
+        #div_room{
+            font-size: 5rem;
+            background-color: blanchedalmond;
+            border: #000000 solid 5px;
+            margin: 50px;
+            margin-top: 10px;
+            margin-right: 100px;
+            margin-bottom: 60px;
+            margin-left: 30px;
+        }
+        #div_room1{
+            font-size: 5rem;
+            /*border: #000000 dotted 5px;*/
+            border : 15px;
+            border-color: black;
+            border-style: dotted;
+            border-radius: 50px;
+            background-color: aqua;   
+            margin: 50px 40px 60px 100px; /*top,ringt, botoom,left*/
+        }
+        #div_room2{
+            font-size: 5rem;
+            border: #000000 solid 5px;
+            background-color: #0a6aa1;
+            padding: 50px 40px 60px 100px; /*top,ringt, botoom,left*/
+        }
+        #div_fontstyle{
+            font-size: 50px;
+            font-size: 1.1em;
+            font-size: 1.5rem;
+            width: 50vw;/*전체 창을 기준으로 상대적인 크기*/
+            height : 20vw;
+
+            border: #000000 solid 5px;
+
+        }
+        #div_fontstyle1{
+            font-size: 50px;
+            font-weight: 400;/*600이 기본 두껍게 900이 최대*/
+        }
+        #div_fontstyle2{
+            font-size: 50px;
+            font-weight: 900;/*600이 기본 두껍게 900이 최대*/
+        }
+        #div_fontcolor{
+            color: green;
+            /*background-color: antiquewhite;*/
+            background-color: rgba(31,120,50,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    위
+    <div id="div_room">
+        div_room
+    </div>
+    아래
+    <br/>
+    위
+    <div id="div_room1">
+        div_room1
+    </div>
+    아래
+    <br/>
+    위
+    <div id="div_room2">
+        div_room2
+    </div>
+    아래
+    <br>
+    <div id="div_fontstyle">
+        fontstyle
+    </div>
+    <div id="div_fontstyle1">
+        fontstyle1
+    </div>
+    <div id="div_fontstyle2">
+        fontstyle2
+    </div>
+    <div id="div_fontcolor">
+        fontcolor
+    </div>
+    <div id="div_hide" onclick="$(this).addClass()">
+        hidden
+    </div>
+    <div id="div_visibility" onclick="$(this).addClass()">
+        visibility
+    </div>
+    <div>
+        진하게
+    </div>
+
+
+    <div id="div_position_fixed" style="position: fixed; top:200px; left:600px">
+        fixed position
+    </div>
+
+    <div id="div_position_absolute" style="position: absolute; top:100px; left:500px; z-index: 30;">
+        fixed absolute
+    </div>
+
+    <div id="div_position_fixed2" style="position: fixed; top:200px; left:600px">
+        <div id="div_position_absolute1" style="position: absolute; top:50px; left:10px">
+            fixed absolute1
+        </div>
+    </div>
+
+
+    <table style="width: 100%; text-align: center">
+        <tr>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <table style="width: 100%; text-align: center; border: 3px solid #000000;">
+        <thead>
+        <tr>
+            <th style="border-bottom: 1px solid #000000;">#</th>
+            <th>제목</th>
+            <th>내용1</th>
+            <th>내용2</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>
